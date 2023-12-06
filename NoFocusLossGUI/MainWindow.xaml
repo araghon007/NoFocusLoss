@@ -1,0 +1,59 @@
+﻿<Window x:Class="NoFocusLossGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoFocusLossGUI"
+        mc:Ignorable="d"
+        Title="No Focus Loss" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0" x:Name="Processes" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20"/>
+            <Grid Grid.Column="1" Margin="0,15,15,25">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15">Injectable</TextBlock>
+                <Button Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Inject" FontSize="14" Width="50" Click="Inject">
+                    <Button.ToolTip>
+                        <ToolTip>Inject DLLs into the selected process</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Refresh" FontSize="14" Width="60" Click="Refresh">
+                    <Button.ToolTip>
+                        <ToolTip>Refresh the process list</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="InjectedProcesses" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20"/>
+            <Grid Grid.Column="1" Margin="0,15,15,25">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Injected</TextBlock>
+                <Button Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Unload" FontSize="14" Width="60" Click="Unload">
+                    <Button.ToolTip>
+                        <ToolTip>Unload NoFocusLoss from the selected process</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

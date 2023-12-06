@@ -1,0 +1,6 @@
+[submodule "NoFocusLoss/minhook"]
+	path = NoFocusLoss/minhook
+	url = https://github.com/TsudaKageyu/minhook
+[submodule "SharpestInjector"]
+	path = SharpestInjector
+	url = https://github.com/araghon007/SharpestInjector.git
