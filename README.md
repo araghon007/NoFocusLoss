@@ -3,6 +3,8 @@ This is a utility that prevents games from pausing/muting on background by makin
 
 This will break some things but uhh
 
+Uses injection since I can't really find any other way to do what I need.
+
 ## Usage
 
 1. Launch NoFocusLossGUI.exe
