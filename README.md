@@ -5,6 +5,9 @@ This will break some things but uhh
 
 Uses injection since I can't really find any other way to do what I need.
 
+## Notice
+Don't use in multiplayer games, only use in games that actually need it.
+
 ## Usage
 
 1. Launch NoFocusLossGUI.exe
