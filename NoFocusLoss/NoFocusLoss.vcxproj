@@ -43,7 +43,7 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <PropertyGroup Condition="'$(Platform)'=='x64'">
     <TargetName>NoFocusLoss64</TargetName>
   </PropertyGroup>
   
