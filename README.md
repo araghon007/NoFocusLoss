@@ -5,8 +5,10 @@ This will break some things but uhh
 
 Uses injection since I can't really find any other way to do what I need.
 
-## Notice
-Don't use in multiplayer games, only use in games that actually need it.
+# Caution
+Use this utility at your own risk! This utility uses process injection. 
+
+Don't use in multiplayer games, only use in games that actually need it. Be careful which process you inject into, as it could cause a softlock, requiring a restart.
 
 ## Usage
 
