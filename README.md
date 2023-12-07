@@ -54,12 +54,14 @@ Really though, it's just replacing the window's WndProc to block certain message
 
 ## Drawbacks:
 - Injection, maybe don't use it in multiplayer games
+- While active makes it very difficult, if not impossible, to interact with window title bar elements, such as dragging, minimize/maximize and close if the game captures the mouse cursor
 
 ## Tested Games:
 - Teardown
 - Alan Wake
 - Need For Speed 2015 (2016)
 - I Expect You To Die 3 (yay, this fixed controller input)
+- The Long Dark
 
 ## Known Issues:
 - EA's Origin overlay appears frozen, until you try alt-tabbing which forces it to refresh
